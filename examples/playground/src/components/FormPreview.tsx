@@ -1,7 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 import yaml from 'yaml';
-import { FormBuilder } from '@limepie/form-react';
-import type { FormData, FormErrors } from '@limepie/form-react';
+import { FormBuilder } from '@form-spec/generator-react';
+import type { FormData, FormErrors } from '@form-spec/generator-react';
 
 interface FormPreviewProps {
   spec: string;

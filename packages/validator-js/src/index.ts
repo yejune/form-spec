@@ -6,7 +6,7 @@
  *
  * @example
  * ```typescript
- * import { Validator } from '@limepie/form-validator';
+ * import { Validator } from '@form-spec/validator';
  *
  * const spec = {
  *   type: 'group',

@@ -5,8 +5,8 @@
  * in a Node.js/Express backend for server-side validation.
  */
 
-import { Validator, createValidator } from '@limepie/form-validator';
-import type { Spec, ValidationResult, RuleFn } from '@limepie/form-validator';
+import { Validator, createValidator } from '@form-spec/validator';
+import type { Spec, ValidationResult, RuleFn } from '@form-spec/validator';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
 import * as path from 'path';
@@ -555,7 +555,7 @@ function expressIntegrationExample() {
 
   const exampleCode = `
 import express from 'express';
-import { Validator } from '@limepie/form-validator';
+import { Validator } from '@form-spec/validator';
 import * as yaml from 'yaml';
 import * as fs from 'fs';
 

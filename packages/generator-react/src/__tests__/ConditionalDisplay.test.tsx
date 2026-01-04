@@ -10,7 +10,7 @@ import { render, screen, cleanup } from '@testing-library/react';
 import { FormContextProvider, useFormContext } from '../context/FormContext';
 import { I18nContextProvider } from '../context/I18nContext';
 import { useConditional, checkFieldVisibility } from '../hooks/useConditional';
-import type { Spec } from '@limepie/form-validator';
+import type { Spec } from '@form-spec/validator';
 import type { FormData, AllOfCondition } from '../types';
 
 // ============================================================================

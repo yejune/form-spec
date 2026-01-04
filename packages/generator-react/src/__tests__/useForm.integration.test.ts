@@ -1,13 +1,13 @@
 /**
  * useForm Hook Integration Tests
  *
- * Tests the useForm hook integration with @limepie/form-validator
+ * Tests the useForm hook integration with @form-spec/validator
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { renderHook, act, waitFor } from '@testing-library/react';
 import { useForm } from '../hooks/useForm';
-import type { Spec } from '@limepie/form-validator';
+import type { Spec } from '@form-spec/validator';
 
 // Test specification with various field types and validation rules
 const testSpec: Spec = {

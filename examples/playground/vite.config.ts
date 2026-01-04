@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@limepie/form-react': path.resolve(__dirname, '../../react/src'),
+      '@form-spec/generator-react': path.resolve(__dirname, '../../generator-react/src'),
     },
   },
   optimizeDeps: {

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import type { FormData } from '@limepie/form-react';
+import type { FormData } from '@form-spec/generator-react';
 
 interface BackendResult {
   backend: string;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormBuilder } from '@limepie/form-react';
+import { FormBuilder } from '@form-spec/generator-react';
 import productSpec from '../specs/product.yaml?raw';
 
 interface ProductPageProps {

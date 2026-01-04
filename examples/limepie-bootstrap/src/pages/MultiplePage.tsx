@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FormBuilder } from '@limepie/form-react';
+import { FormBuilder } from '@form-spec/generator-react';
 
 interface MultiplePageProps {
   language: 'ko' | 'en';
@@ -37,7 +37,7 @@ export function MultiplePage({ language }: MultiplePageProps) {
     }
   };
 
-  const handleChange = (name: string, value: unknown, fullData: Record<string, unknown>) => {
+  const handleChange = (_name: string, _value: unknown, fullData: Record<string, unknown>) => {
     // Use the full data from FormBuilder instead of managing state separately
     setFormData(fullData as typeof formData);
   };

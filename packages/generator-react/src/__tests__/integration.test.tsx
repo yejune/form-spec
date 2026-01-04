@@ -1,13 +1,13 @@
 /**
  * Integration Test: FormBuilder + Validator
  *
- * Verifies that the React FormBuilder correctly integrates with @limepie/form-validator
+ * Verifies that the React FormBuilder correctly integrates with @form-spec/validator
  */
 
 import { describe, it, expect, vi } from 'vitest';
-import { Validator, createValidator } from '@limepie/form-validator';
+import { Validator, createValidator } from '@form-spec/validator';
 import { useValidation } from '../hooks/useValidation';
-import type { Spec } from '@limepie/form-validator';
+import type { Spec } from '@form-spec/validator';
 
 // Test spec for validation
 const testSpec: Spec = {

@@ -5,8 +5,8 @@
  */
 
 import { useState, useCallback, useMemo, useRef, type ChangeEvent, type FocusEvent } from 'react';
-import { Validator } from '@limepie/form-validator';
-import type { Spec } from '@limepie/form-validator';
+import { Validator } from '@form-spec/validator';
+import type { Spec } from '@form-spec/validator';
 import type { FormData, FormErrors, FormValue, UseFormReturn } from '../types';
 import { getValueByPath, setValueByPath, parsePathString } from '../utils/path';
 

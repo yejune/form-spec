@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import type { Spec, ButtonSpec } from '@limepie/form-validator';
+import type { Spec, ButtonSpec } from '@form-spec/validator';
 import { useI18n } from '../../context/I18nContext';
 import { SubmitButton } from './SubmitButton';
 import type { MultiLangText } from '../../types';

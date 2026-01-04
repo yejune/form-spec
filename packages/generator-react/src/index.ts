@@ -1,11 +1,11 @@
 /**
- * @limepie/form-react
+ * @form-spec/generator-react
  *
  * React form builder component library based on form-spec YAML definitions
  *
  * @example
  * ```tsx
- * import { FormBuilder } from '@limepie/form-react';
+ * import { FormBuilder } from '@form-spec/generator-react';
  *
  * const yamlSpec = `
  * type: group

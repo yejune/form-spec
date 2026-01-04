@@ -17,7 +17,7 @@ export type {
   MessagesSpec,
   ValidationResult,
   ValidationError,
-} from '@limepie/form-validator';
+} from '@form-spec/validator';
 
 // ============================================================================
 // Language Types
@@ -75,7 +75,7 @@ export type FormErrors = Record<string, string>;
  */
 export interface FormBuilderProps {
   /** Form specification (YAML string or parsed object) */
-  spec: string | import('@limepie/form-validator').Spec;
+  spec: string | import('@form-spec/validator').Spec;
   /** Initial form data */
   data?: FormData;
   /** Current language */
@@ -116,8 +116,8 @@ export interface ReactFieldSpec {
   multiple?: boolean | 'only';
 
   // Validation
-  rules?: import('@limepie/form-validator').RulesSpec;
-  messages?: import('@limepie/form-validator').MessagesSpec;
+  rules?: import('@form-spec/validator').RulesSpec;
+  messages?: import('@form-spec/validator').MessagesSpec;
 
   // Conditional display
   display_switch?: string;
@@ -125,7 +125,7 @@ export interface ReactFieldSpec {
   element?: ElementConfig;
 
   // Items for select/radio/checkbox lists
-  items?: Record<string, string> | import('@limepie/form-validator').ItemsSourceSpec;
+  items?: Record<string, string> | import('@form-spec/validator').ItemsSourceSpec;
 
   // CSS classes
   input_class?: string;
@@ -211,7 +211,7 @@ export interface FieldComponentProps {
  */
 export interface WrapperRenderProps {
   children: ReactNode;
-  spec: import('@limepie/form-validator').Spec;
+  spec: import('@form-spec/validator').Spec;
   onSubmit: (e: React.FormEvent) => void;
 }
 
@@ -219,7 +219,7 @@ export interface WrapperRenderProps {
  * Buttons render props
  */
 export interface ButtonsRenderProps {
-  spec: import('@limepie/form-validator').Spec;
+  spec: import('@form-spec/validator').Spec;
   isSubmitting: boolean;
   isValid: boolean;
 }
@@ -233,7 +233,7 @@ export interface ButtonsRenderProps {
  */
 export interface FormContextValue {
   /** Full form specification */
-  spec: import('@limepie/form-validator').Spec;
+  spec: import('@form-spec/validator').Spec;
   /** Current form data */
   data: FormData;
   /** Current errors */

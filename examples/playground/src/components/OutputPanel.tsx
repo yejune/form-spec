@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { FormData, FormErrors } from '@limepie/form-react';
+import type { FormData, FormErrors } from '@form-spec/generator-react';
 import { BackendComparison } from './BackendComparison';
 
 interface OutputPanelProps {
