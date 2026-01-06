@@ -407,3 +407,18 @@ export interface CachedCondition {
   expression: string;
   ast: ASTNode;
 }
+
+// ============================================================================
+// Validator Options
+// ============================================================================
+
+/**
+ * Options for Validator instance
+ */
+export interface ValidatorOptions {
+  /**
+   * Enable debug mode for verbose error logging
+   * When enabled, condition parsing/evaluation errors will be logged to console.warn
+   */
+  debug?: boolean;
+}
