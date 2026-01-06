@@ -11,6 +11,8 @@
  */
 export interface Spec {
   type: 'group';
+  /** Unique key for the form (used as prefix for field names, e.g., "product") */
+  key?: string;
   name?: string;
   label?: string;
   title?: string;
